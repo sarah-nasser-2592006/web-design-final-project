@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - مكتبة آفاق</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>📚 مكتبة آفاق الرقمية</h1>
+            <p>يسعدنا تلقي طلباتكم واستفساراتكم في أي وقت</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية🌕</a></li>
+            <li><a href="products.html">الكتب المتاحة📚</a></li>
+            <li><a href="pricing.html">الاسعار $</a></li>
+            <li><a href="contact.html">تواصل معنا 📞</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about-section">
+            <h2>استمارة طلب كتاب أو تواصل</h2>
+            
+            <!-- نموذج التفاعل Form -->
+            <form class="contact-form">
+                
+                <!-- الاسم والبريد الإلكتروني -->
+                <div class="form-group">
+                    <label for="fullname">الاسم الكامل:</label>
+                    <input type="text" id="fullname" class="my-input" name="fullname" required placeholder="أدخل اسمك الثلاثي">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" class="my-input" required placeholder="name@example.com">
+                </div>
+
+                <!-- قائمة خيارات select لتحديد الخدمة أو الكتاب -->
+                <div class="form-group">
+                    <label for="service">اختر نوع الطلب/الكتاب المراد:</label>
+                    <select id="service" name="service" class="my-input">
+                        <option value="psychology">كتاب أسرار علم النفس</option>
+                        <option value="novel">رواية خلف الأفق</option>
+                        <option value="javascript">أساسيات البرمجة بالـ JS</option>
+                        <option value="leadership">إستراتيجيات القيادة الناجحة</option>
+                       
+                    </select>
+                </div>
+
+                <!-- تفضيلات إضافية باستخدام أزرار الخيار والتحديد -->
+                <div class="form-group">
+                    <label>صيغة الكتاب المفضلة </label>
+                    <div class="radio-group">
+                        <input type="radio" name="format" value="pdf" >
+                        <label> PDF رقمي</label>
+                        <input type="radio" name="format" value="paper">
+                        <label> نسخة ورقية مطبوعة</label>
+                    </div>
+                </div>
+
+
+                <!-- حقل الملاحظات textarea -->
+                <div class="form-group">
+                    <label for="message">ملاحظات أو رسالة إضافية:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="اكتب تفاصيل عنوان الشحن أو أي اقتراحات هنا..."></textarea>
+                </div>
+
+                <!-- زر الإرسال Submit -->
+                <button type="submit" class="btn-submit">إرسال الطلب</button>
+            </form>
+
+            <!-- معلومات الاتصال:  الموقع   -->
+            <div class="map-container">
+                <h3>مقر المكتبة الرئيسي والادارة</h3>
+                <p>تفضلوا بزيارتنا في فرعنا للاطلاع على الكتب الورقية في كليه المجتمع</p>
+              <a href="locle@gamil.com" class="btn">الموقع الرسمي</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 مكتبة آفاق الرقمية. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
